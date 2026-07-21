@@ -1,0 +1,19 @@
+Column_Name,Description,Data_Type,Feature_Type,Present_In_Train,Present_In_Test,Is_Target
+Property_ID,Unique property identifier,String,Identifier,Yes,Yes,No
+City,City where property is located,Categorical,Feature,Yes,Yes,No
+Locality_Type,"Premium, Mid-Range, Affordable classification",Categorical,Feature,Yes,Yes,No
+Property_Type,Type of residential property,Categorical,Feature,Yes,Yes,No
+BHK,Number of bedrooms,Integer,Feature,Yes,Yes,No
+Bathrooms,Number of bathrooms,Integer,Feature,Yes,Yes,No
+Super_Area_SqFt,Total built-up area in square feet,Float,Feature,Yes,Yes,No
+Carpet_Area_SqFt,Usable interior area in square feet,Float,Feature,Yes,Yes,No
+Floor_Number,Floor on which property is located,Integer,Feature,Yes,Yes,No
+Total_Floors,Total floors in building,Integer,Feature,Yes,Yes,No
+Age_of_Property,Age of property in years,Integer,Feature,Yes,Yes,No
+Furnishing_Status,"Furnished, Semi-Furnished, Unfurnished",Categorical,Feature,Yes,Yes,No
+Parking,Parking availability (0/1),Binary,Feature,Yes,Yes,No
+Lift_Available,Lift availability (0/1),Binary,Feature,Yes,Yes,No
+Gated_Community,Gated community indicator (0/1),Binary,Feature,Yes,Yes,No
+Distance_to_Metro_km,Distance to nearest metro station (km),Float,Feature,Yes,Yes,No
+Distance_to_City_Center_km,Distance to city center (km),Float,Feature,Yes,Yes,No
+Price_INR_Lakhs,Final sale price in Lakhs (Target Variable),Float,Target,Yes,No,Yes

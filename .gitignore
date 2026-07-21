@@ -1,0 +1,9 @@
+# Ignore all images in the root folder only
+/*.jpg
+/*.jpeg
+/*.png
+/*.pdf
+/*.webp
+
+# Ignore HTML files in the root only
+/*.html
