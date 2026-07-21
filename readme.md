@@ -1,15 +1,18 @@
-# 🎓 NMIMS B.Tech Data Science
+# 🎓 NMIMS B.Tech Data Science Repository
 
-A centralized repository containing all of my coursework, notes, assignments, lab work, projects, and study resources throughout my B.Tech in Data Science at **MPSTME, NMIMS**.
+Welcome! 👋
 
-> **Status:** Ongoing (2024–2028)
+This repository contains study material, notes, assignments, lab work, previous papers, code, and other academic resources collected throughout my B.Tech in Data Science at **MPSTME, NMIMS**.
+
+The goal is to create a single place where students can easily find resources for every semester and subject.
 
 ---
 
 ## 📂 Repository Structure
 
-```text
-.
+```
+NMIMS-BTech-DS/
+│
 ├── sem 1/
 ├── sem 2/
 ├── sem 3/
@@ -24,101 +27,85 @@ A centralized repository containing all of my coursework, notes, assignments, la
 └── sem 12/
 ```
 
-Each semester contains subject-wise folders, typically organized as:
+Each semester is divided into subject folders.
 
-```text
-Subject/
-├── Notes/
-├── Assignments/
-├── Lab/
-├── Practical/
-├── Previous Papers/
-├── Resources/
-├── Code/
-└── README.md (optional)
+Example:
+
+```
+sem 7/
+│
+├── FOML/
+│   ├── Notes/
+│   ├── Assignments/
+│   ├── Labs/
+│   ├── Previous Papers/
+│   ├── Resources/
+│   └── Code/
+│
+├── DBMS/
+├── SSDI/
+└── ...
 ```
 
 ---
 
-## 📚 Contents
+## 📚 What's Included
 
-This repository may include:
+Depending on the subject, you'll find:
 
-- 📖 Class Notes
+- 📖 Lecture Notes
 - 📝 Assignments
 - 💻 Lab Programs
-- 📂 Mini Projects
+- 📂 Projects
 - 📑 Previous Year Papers
 - 📊 Datasets
 - 📄 PPTs
-- 🔗 Useful Resources
 - 📌 Cheat Sheets
-- 📜 Course Material
+- 🔗 Useful Resources
+- 📚 Reference Books
 
 ---
 
-## 🛠 Purpose
+## 🤝 Contributions
 
-This repository serves as:
+Contributions are welcome!
 
-- A personal backup of my academic work
-- A centralized knowledge base
-- A reference for future semesters
-- A revision resource before examinations
+If you'd like to help improve this repository, feel free to:
+
+- Add missing notes
+- Upload previous papers
+- Fix incorrect information
+- Add useful resources
+- Improve folder organization
+
+Please open a Pull Request or create an Issue if you notice something that should be added or corrected.
 
 ---
 
 ## ⚠️ Disclaimer
 
-Most notes, presentations, and assignments are intended for **educational purposes only**.
+This repository is maintained for educational purposes.
 
-Some materials may have been provided by faculty members or collected from classmates. If you are the original author of any content and would like it removed, please contact me.
+Some materials may have been provided by faculty members or shared among students. If you are the original author of any content and would like it removed or credited differently, please open an Issue or contact me.
 
----
-
-## 🚀 Tech Stack (where applicable)
-
-Depending on the course, projects may use:
-
-- Python
-- C++
-- Java
-- SQL
-- Jupyter Notebook
-- TensorFlow
-- PyTorch
-- FastAPI
-- PostgreSQL
-- Git
+Please do **not** use this repository for plagiarism. Use it as a learning and revision resource.
 
 ---
 
-## 📌 Progress
+## ⭐ If this repository helped you
 
-| Semester | Status |
-|----------|--------|
-| Sem 1 | ✅ |
-| Sem 2 | ✅ |
-| Sem 3 | ✅ |
-| Sem 4 | ✅ |
-| Sem 5 | ✅ |
-| Sem 6 | ✅ |
-| Sem 7 | ✅ |
-| Sem 8 | ✅ |
-| Sem 9 | ⏳ |
-| Sem 10 | ⏳ |
-| Sem 11 | ⏳ |
-| Sem 12 | ⏳ |
+Consider giving it a ⭐ so more NMIMS students can find it.
 
 ---
 
-## ⭐ Repository Goals
+## 📬 Contact
 
-- Keep all college material organized
-- Maintain version history using Git
-- Make switching between devices seamless
-- Preserve projects and notes beyond graduation
+**Shayan Mandrekar**
+
+- GitHub: https://github.com/shayan-wasLazy
+
+If you're from NMIMS and have notes, papers, or resources to contribute, feel free to reach out or submit a Pull Request.
 
 ---
 
-**Maintained by:** Shayan Mandrekar
+Happy Learning! 🚀
