@@ -1,0 +1,247 @@
+/* ============================================================
+   Assignment 2 — CSS starter
+   Based on: IMAP Lecture 2 (CSS)
+
+   You only edit THIS file. Do not change starter.html.
+   Work through ASSIGNMENT.md in order — each section below
+   corresponds to one task (Q1-Q10). The page currently has
+   no layout styling at all, so it will look like plain,
+   unstyled HTML until you start filling these in.
+   ============================================================ */
+
+
+/* ---------- Q1. Reset & custom properties ---------- */
+
+/* Universal box-sizing reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom properties */
+:root {
+    --brand-color: #4a6cf7;
+    --brand-dark: #2f4bb5;
+    --spacing: 20px;
+    --border-radius: 10px;
+}
+
+/* Example usage */
+body {
+    font-family: sans-serif;
+    background-color: #f7f6f3;
+    margin: 0;
+    padding: var(--spacing);
+}
+
+h1 {
+    color: var(--brand-color);
+}
+
+button {
+    background-color: var(--brand-color);
+    color: white;
+    border-radius: var(--border-radius);
+    border: none;
+    padding: 10px 16px;
+}
+
+button:hover {
+    background-color: var(--brand-dark);
+}
+
+/* ---------- Q2. Selectors, combinators & pseudo-classes ---------- */
+
+/* Navigation links */
+.toc a {
+    color: var(--brand-color);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    color: var(--brand-dark);
+    text-decoration: underline;
+}
+
+/* Zebra effect */
+.cards .card:nth-child(even) td {
+    background-color: #eef2ff;
+}
+
+/* Keyboard focus */
+form input:focus-visible,
+form textarea:focus-visible {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
+}
+
+/* ---------- Q3. Box model ---------- */
+
+.card td {
+    padding: 20px;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.card td:first-child {
+    border-left: 1px solid #d6d6d6;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.card td:last-child {
+    border-right: 1px solid #d6d6d6;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+/* ---------- Q4. Typography ---------- */
+
+/* Base typography */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+/* Keep paragraph text readable */
+.block p {
+    max-width: 65ch;
+}
+
+/* ---------- Q5. Flexbox: navbar ---------- */
+
+.toc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toc a {
+    margin-left: 20px;
+}
+
+/* ---------- Q6. Flexbox: card meta row ---------- */
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------- Q7. Grid: page skeleton ---------- */
+
+/* Mobile-first: natural stacked layout */
+.page {
+    display: block;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .page {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "sidebar main"
+            "footer footer";
+    }
+
+    .page-header {
+        grid-area: header;
+    }
+
+    .toc {
+        grid-area: nav;
+    }
+
+    .page > aside {
+        grid-area: sidebar;
+    }
+
+    .page > main {
+        grid-area: main;
+    }
+
+    .page-footer {
+        grid-area: footer;
+    }
+}
+/* ---------- Q8. Grid: card gallery ---------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ---------- Q9. Breakpoint 1: activate the page grid ---------- */
+
+/* Mobile-first: natural stacked layout */
+/*.page {
+    display: block;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .page {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "sidebar main"
+            "footer footer";
+    }
+
+    .page-header {
+        grid-area: header;
+    }
+
+    .toc {
+        grid-area: nav;
+    }
+
+    .page > aside {
+        grid-area: sidebar;
+    }
+
+    .page > main {
+        grid-area: main;
+    }
+
+    .page-footer {
+        grid-area: footer;
+    }
+}
+*/
+/* ---------- Q10. Breakpoint 2 + fluid type ---------- */
+
+@media (min-width: 1024px) {
+    .page {
+        grid-template-columns: 280px 1fr;
+        gap: 24px;
+    }
+}

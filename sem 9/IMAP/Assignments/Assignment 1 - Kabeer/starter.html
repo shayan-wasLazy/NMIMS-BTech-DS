@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabeer</title>
+  <link rel="stylesheet" href="starter.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="page-header">
+      <p class="eyebrow">Student Portfolio</p>
+      <h1>Kabeer</h1>
+      <p class="subtitle">I'm a sneaker head</p>
+    </header>
+
+    <nav class="toc">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#form">Contact</a>
+    </nav>
+
+    <main>
+
+      <section id="about" class="block">
+        <p class="section-label">About</p>
+        <h2>About Me</h2>
+        <p>Write a short paragraph about yourself here. Mention what you are studying and what you are interested in.</p>
+        <figure>
+          <figcaption>Profile Picture</figcaption>
+          <img alt="img", width="100" src="profile-img.jpg" alt="Profile Picture" class="profile-image">
+        </figure>
+      </section>
+
+      <section id="skills" class="block">
+        <p class="section-label">Skills</p>
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Problem Solving</li>
+          <li>dance</li>
+          <li>skating</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="block">
+        <p class="section-label">Projects</p>
+        <h2>My Projects</h2>
+        <table>
+          <caption>Projects I have worked on</caption>
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Project One</td>
+              <td>A short description of project one.</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>Project Two</td>
+              <td>A short description of project two.</td>
+              <td>In Progress</td>
+            </tr>
+            <tr>
+              <td>Project Three</td>
+              <td>A short description of project three.</td>
+              <td>In Progress</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="form" class="block">
+        <p class="section-label">Contact</p>
+        <h2>Contact Me</h2>
+        <form action="/submit" method="post">
+          <fieldset>
+            <legend>Send a message</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message"></textarea>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+              <option value="general">General Inquiry</option>
+              <option value="feedback">Feedback</option>
+            </select>
+
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to newsletter</label>
+
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <aside>im a good fast bowler</aside>
+      <dl>
+        <dt>rag</dt>
+        <dd>agentic ai</dd>
+      </dl>
+
+    </main>
+
+    <footer class="page-footer">
+      <hr>
+      <p>&copy; 2026 My Portfolio.</p>
+      <hr>
+      <a href="https://www.linkedin.com/in/kabeer" target="_blank">LinkedIn</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>

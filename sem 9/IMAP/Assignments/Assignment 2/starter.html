@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="starter.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="page-header">
+      <p class="eyebrow">Student Portfolio</p>
+      <h1>Your Name Here</h1>
+      <p class="subtitle">A short one-line intro about yourself goes here.</p>
+    </header>
+
+    <nav class="navbar">
+      <span class="brand">Portfolio</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#form">Contact</a>
+      </div>
+    </nav>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>Quick Facts</h3>
+        <dl>
+          <dt>Based in</dt>
+          <dd>Your City</dd>
+          <dt>Focus</dt>
+          <dd>Web Development</dd>
+        </dl>
+      </div>
+      <div class="widget">
+        <h3>Currently Exploring</h3>
+        <ul class="tag-list">
+          <li>CSS Grid</li>
+          <li>Flexbox</li>
+          <li>Accessibility</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+
+      <section id="about" class="block">
+        <p class="section-label">About</p>
+        <h2>About Me</h2>
+        <p>Write a short paragraph about yourself here. Mention what you are studying and what you are interested in.</p>
+      </section>
+
+      <section id="skills" class="block">
+        <p class="section-label">Skills</p>
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Problem Solving</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="block">
+        <p class="section-label">Projects</p>
+        <h2>My Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>A short description of project one.</p>
+            <div class="card-meta">
+              <span class="badge">Completed</span>
+              <a href="#" class="card-link">Read more &rarr;</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>A short description of project two.</p>
+            <div class="card-meta">
+              <span class="badge">In Progress</span>
+              <a href="#" class="card-link">Read more &rarr;</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>A short description of project three.</p>
+            <div class="card-meta">
+              <span class="badge">Planned</span>
+              <a href="#" class="card-link">Read more &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="form" class="block">
+        <p class="section-label">Contact</p>
+        <h2>Contact Me</h2>
+        <form action="/submit" method="post">
+          <fieldset>
+            <legend>Send a message</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message"></textarea>
+
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <hr>
+      <p>&copy; 2026 My Portfolio.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
